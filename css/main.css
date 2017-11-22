@@ -1,0 +1,149 @@
+/*Global VAlues*/
+
+body {
+    /**scalable background to fill available viewport**/
+    background:url(../img/background/bg-lights-3.jpg) center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:##fffeed;
+    opacity:1.0;
+}
+img{
+    height:auto;
+    background-size: contain;
+}
+h1, h2 {
+    color:#ffffff;
+    text-shadow:0 1px 0 #ccc,
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 3px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 8px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15),
+                1px 1px 6px black,
+                0 0 13px blue,
+                0 0 13px darkblue;
+    font-weight: bold;
+    letter-spacing:8px;
+    font-family: 'Lusitana', sans-serif, serif;
+    text-decoration:none;
+    font-style: italic;
+}
+h4,h3 {
+    color:#ffffff;
+    text-shadow:1px 2px 1px #000,
+                1px 1px 3px black,
+                0 0 15px blue,
+                0 0 15px darkblue;
+    font-family: 'Lusitana', sans-serif, serif;
+    letter-spacing:1px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+p {
+    color:#fffeed;
+    text-shadow:1px 2px 1px #000,
+                1px 1px 3px black,
+                0 0 15px blue,
+                0 0 15px darkblue;
+    font-size: 13px;
+    font-family: 'Lusitana', serif;
+    font-style: italic;
+}
+/*ID's*/
+
+#band {
+    margin-bottom: 20px;
+}
+#band p {
+    text-shadow:1px 2px 1px #000,
+                1px 1px 5px black,
+                0 0 10px blue,
+                0 0 15px darkblue;
+    font-size: 16px;
+    letter-spacing:1px;
+    color:#ffffff;
+    font-family:'Lusitana', serif;
+}
+/*Classes*/
+
+.list-group {
+    color:#fffeed;;
+    text-shadow:1px 2px 1px #000,
+                1px 1px 3px black,
+                0 0 15px blue,
+                0 0 15px darkblue;
+    font-size: 13px;
+    font-family: 'Lusitana', serif;
+    font-style: italic;
+    line-height: 25px;
+}
+/*Logo*/
+.logo {
+    padding: 10px;
+}
+.logo img {
+    max-width:200px;
+    margin-top:10px:
+    max-height:40px;
+    opacity:1.5;
+}
+/*Navbar*/
+
+.navbar {
+    font-family:'Lusitana', serif, sans-serif;
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    border: none;
+}
+.navbar-default {
+    background: transparent;
+}
+.navbar-nav>li>a {
+    color:#ffffff !important;
+}
+.navbar-nav>li>a:hover {
+    color:#d5d5d5 !important;
+}
+.navbar-nav>li>.active a {
+    color:#fffeed !important;
+    background-color:#29292c !important;
+}
+/*dropdown-toogle*/
+.open .dropdown-toogle {
+    color:#fffeed;
+    background-color: #555;
+}
+.dropdown-menu li a{
+    color:#000;
+}
+.dropdown-menu li a:hover {
+    background-color: #grey;
+}
+/*Carousel*/
+
+.carousel-inner img {
+    width: 100%;
+    background-size: contain;
+}
+
+/*Band Members*/
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width:65%;
+    opacity: 0.8;
+}
+.person:hover {
+    border-color: #f1f1f1;
+}

@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Blasting off with Bootstrap</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='css/main.css' rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lusitana|Niconne|Raleway" rel="stylesheet" type='text/css'>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<!--Body-->
+<body data-spy="scroll" data-target="navbar" data-offset="50">
+ <div class='container-fluid'>
+  <!-- Header-->
+   <nav class='navbar navbar-default navbar-fix-top' role='navigation'>
+    <div class='navbar-header'>
+     <button type='button' class='navbar-toggle collapsed'data-toggle='collapse'data-target='.navbar-collapse'>
+      <span class='sr-only'>Toggle navigation</span>
+       <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+         <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+      </button>
+<!--Logo Navbar-brand-->
+        <a class='logo' href="#" ><img src='img/logo/logoSmall.png' /></a>
+    </div> <!--closing navbar-header line27-->
+<!-- right navbar-->
+      <div class='collapse navbar-collapse navbar-right'>
+        <ul class='nav navbar-nav'>
+            <li><a href='#home.html'>Home</a></li>
+            <li><a href='#band.html'>Band</a></li>
+            <li><a href='#albums.html'>Albums</a></li>
+            <li><a href='#contact.html'>Contact</a></li>
+            <li class='dropdown'>
+            <a class='dropdown-toggle' data-toggle='dropdown'href='#'>More
+            <span class='caret'></span></a>
+        <ul class='dropdown-menu'>
+            <li><a href='#'> Something</a></li>
+            <li><a href='#'>Something</a></li>
+            <li><a href='#'>Something</a></li>
+            <li><a href='#'><span class='glyphicon glyphicon-search'></span></a></li>
+        </ul>
+      </div>
+    </nav><br> <!--div for navbar-fix-top-->
+
+<!--Container Band -->
+  <div id='band'>
+    <div class='row'>
+<!-- Carousel -->
+      <div class='col-sm-7 visibe-md visible-lg'>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+  <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+<!--First Slide-->
+          <div class="item active">
+            <img class='img-responsive' src="img/slides/slider1.jpg" alt="image"width="600" height="350">
+          </div>
+<!--Second slide -->
+          <div class="item">
+            <img class='img-responsive' src="img/slides/slider2.jpg" alt="image"width="600" height="350" >
+          </div>
+<!-- Third slide-->
+          <div class="item">
+            <img class='img-responsive' src="img/slides/slider3.jpg" alt="image" width="600" height="350">
+          </div>
+  <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> <!--div for carousel-inner-->
+        </div> <!--div for id-Mycarousel-->
+      </div>
+      <!--Band Bio to the right of the carousel-->
+      <div class='col-md-5 visisble-sm visbible-md visible-lg'>
+        <h2>A Chicago Story</h2><br>
+          <p class='text-left'>In 1967, Chicago musicians Walter Parazaider, Terry Kath, Danny Seraphine, Lee Loughnane, James Pankow, Robert Lamm, and Peter Cetera formed a group with one dream, to integrate all the musical diversity from their beloved city and weave a new sound, a rock 'n' roll band with horns. Their dream turned into record sales topping the 100,000,000 mark, including 21 Top 10 singles, 5 consecutive Number One albums, 11 Number One singles and 5 Gold singles. An incredible 25 of their 34 albums have been certified platinum, and the band has a total of 47 gold and platinum awards.</p>
+      </div>
+    </div> <!--div for band row-->
+  </div> <!--div for id band-->
+<br>
+<!--Band Members-->
+<div id='members'class='text-center'>
+  <h1><em>Meet Our Band Members</em></h1><br>
+    <div class='row'>
+      <div class='col-sm-4'>
+        <p class='text-center'><strong>Jeff</strong></p><br>
+         <a href="#demo" data-toggle="collapse">
+          <img src='img/members/jeff.jpg' class='img-circle person' alt='image' width="255" height="255">
+           </a>
+            <div id='demo' class='collapse'>
+              <p>Bass</p>
+              <p>Vocals</p>
+            </div>
+       </div>
+      <div class='col-sm-4'>
+         <p class='text-center'><strong>Keith</strong></p><br>
+          <a href='#demo2' data-toggle='collapse'>
+           <img src='img/members/keith.jpg' class='img-circle person' alt='image' width="255" height="255">
+            </a>
+             <div id='demo2'class='collapse'>
+               <p>Guitar</p>
+               <p>Vocals</p>
+             </div>
+      </div>
+      <div class='col-sm-4'>
+        <p class='text-center'><strong>Robert</strong></p><br>
+          <a href='#demo3' data-toggle='collapse'>
+            <img src='img/members/robert.jpg' class='img-circle person'alt='image' width="255" height="255">
+              </a>
+                <div id='demo3' data-toggle='collapse'>
+                   <p>Keyboard</p>
+                   <p>Vocals</p>
+                   <p>Composers</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+<!-- container albums-->
+<div id='albums' class='text-center'>
+          <h1>Our Albums</h1><br>
+  <!-- row albums-->
+    <div class='row'>
+      <div class='col-sm-4'>
+        <div class='thumbnail'>
+          <a href='#demo4' data-toggle='collapse'>
+            <img src='img/albums/verybest.jpg' class='img-rounded img-responsive'alt='verybest'width="200" height="200"><br>
+              <div class='caption'>
+                <h4>The Very Best of Chicago:<br> Only the Beginning<br>2002</h4>
+                </div>
+                  <div id='demo4' data-toggle='collapse'>
+                      <ul style='list-style: none;'class='list-group'>
+                          <li>25 or 6 to 4</li>
+                          <li>Does Anybody Really Know What Time It Is?</li>
+                          <li>Beginnings</li>
+                          <li>Questions 67 and 68</li>
+                          <li>I’m a Man</li>
+                          <li>Colour My World</li>
+                          <li>Free</li>
+                          <li>Lowdown</li>
+                          <li>Dialogue (Part I & II)</li>
+                          <li>Just You ‘n’ Me</li>
+                          <li>Feelin’ Stronger Every Day</li>
+                          <li>(I’ve Been) Searchin’ So Long</li>
+                          <li>Wishing You Were Here</li>
+                          <li>Call on Me</li>
+                          <li>Happy Man</li>
+                          <li>Another Rainy Day in New York City</li>
+                          <li>Baby, What a Big Surprise</li>
+                          <li>Take Me Back to Chicago</li>
+                          <li>No Tell Lover</li>
+                          <li>Love Me Tomorrow</li>
+                          <li>Hard to Say I’m Sorry/Get Away</li>
+                          <li>Stay the Night</li>
+                          <li>Hard Habit to Break</li>
+                          <li>You’re the Inspiration</li>
+                          <li>Along Comes a Woman</li>
+                          <li>Will You Still Love Me?</li>
+                          <li>If She Would Have Been Faithful...</li>
+                          <li>Look Away</li>
+                          <li>What Kind of Man Would I Be?</li>
+                          <li>I Don’t Wanna Live Without Your Love</li>
+                          <li>We Can Last Forever</li>
+                          <li>You’re Not Alone</li>
+                          <li>Chasin’ the Wind</li>
+                          <li>Sing, Sing, Sing</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+<!-- Album two -->
+      <div class='col-sm-4'>
+        <div class='thumbnail'>
+          <a href="#demo5" data-toggle="collapse">
+            <img src='img/albums/epic.jpg' class='img-rounded img-responsive' alt='epic'width="200" height="200"><br>
+              <div class='caption'>
+                <h4>Chicago 13<br>1979<br></h4>
+                  </div>
+                      </a>
+                        <div id='demo5' data-toggle='collapse'>
+                            <p>Street Player</p>
+                            <p>Mama Take</p>
+                            <p>Must Have Been Crazy</p>
+                            <p>Window Dreamin'</p>
+                            <p>Paradise Alley</p>
+                            <p>Aloha Mama</p>
+                            <p>Reruns</p>
+                            <p>Loser with a Broken Heart</p>
+                            <p>Life Is What It Is</p>
+                            <p>Run Away</p>
+                          </div>
+                        </div>
+                      </div>
+<!--Album three-->
+      <div class='col-sm-4'>
+        <div class='thumbnail'>
+          <a href="#demo6" data-toggle="collapse">
+            <img src='img/albums/album3.jpg' class='img-rounded img-responsive' alt='album3'width="200" height="200"><br>
+              <div class='caption'>
+                <h4>Chicago VIII<br>1975<br></h4>
+                  </div>
+                      </a>
+                        <div id='demo6'data-toggle='collapse'>
+                             <p>Anyway You Want</p>
+                             <p>Brand New Love Affair, Part I & II</p>
+                             <p> Never Been in Love Before</p>
+                             <p>Hideaway</p>
+                             <p>Till We Meet Again</p>
+                             <p>“Harry Truman”</p>
+                             <p>Oh, Thank You Great Spirit</p>
+                             <p>Long Time No See</p>
+                             <p>Ain’t It Blue?</p>
+                             <p>Old Days</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!--div row-->
+                </div> <!--div id albums-->
+<!-- Footer-->
+<div id='footer-body'>
+  <nav class='navbar navbar-defaul navbar-static-bottom'>
+      <ul class='nav navbar-nav navbar-right'>
+            <li><a href='#index.html'>Home</a></li>
+            <li><a href='#band.html'>Band</a></li>
+            <li><a href='#albums.html'>Albums</a></li>
+            <li><a href='#contact.html'>Contact Us</a></li>
+            <li><a href='#'>Links</a></li>
+            <li><a href='https://www.facebook.com'>Facebook</a></li>
+            <li><a href='/blog'>Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
